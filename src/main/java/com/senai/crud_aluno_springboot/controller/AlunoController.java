@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RestController
+@RequestMapping("/alunos")
 public class AlunoController {
+
     @Autowired
     private AlunoRepositoy alunoRepositorio;
 
