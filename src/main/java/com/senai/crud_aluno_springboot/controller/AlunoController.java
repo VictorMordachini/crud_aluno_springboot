@@ -37,7 +37,7 @@ public class AlunoController {
     public Aluno updateAluno(@PathVariable String id, @RequestBody Aluno alunoDetails) {
         Aluno aluno = alunoRepositorio.findById(id).orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
 
-        aluno.setId(alunoDetails.getId());
+        //aluno.setId(alunoDetails.getId());
         aluno.setNome(alunoDetails.getNome());
         aluno.setEmail(alunoDetails.getEmail());
         aluno.setIdAcesso(alunoDetails.getIdAcesso());
